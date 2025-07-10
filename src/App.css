@@ -19,7 +19,7 @@ input.form-control:focus {
 
 
 .animated-gbc-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,8 +39,26 @@ input.form-control:focus {
   animation: wave 12s ease-in-out infinite;
   white-space: nowrap;
   user-select: none;
-  margin-top: -70px;
+  margin-top: -360px;
+  text-align: center;
 }
+
+@media (max-width: 768px) {
+  .gbc-text {
+    font-size: 10rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gbc-text {
+    font-size: 6rem;
+  }
+}
+
+.animated-gbc-background {
+  top: 5%;
+}
+
 
 @keyframes pulse {
   0%, 100% {
